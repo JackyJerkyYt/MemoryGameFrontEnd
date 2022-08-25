@@ -9,7 +9,7 @@ function AdminPageUsers({ Leaderboard, isAdmin }) {
 
   const Delete = (id) => {
     console.log(id)
-    axios.delete(`http://localhost:8083/delete/${id}`)
+    axios.delete(`https://fullstackmemorygame.herokuapp.com/delete/${id}`)
       .then(() => {
         console.log("done deleting")
       })

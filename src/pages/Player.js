@@ -63,7 +63,7 @@ function Player() {
   //take away lives function
 
   useEffect(() => {
-    axios.get("http://localhost:8083/user")
+    axios.get("https://fullstackmemorygame.herokuapp.com/user")
       .then((res) => {
         setUsersArray(res.data)
       })
