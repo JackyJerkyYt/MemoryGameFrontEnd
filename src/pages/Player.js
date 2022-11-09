@@ -66,7 +66,7 @@ function Player() {
   useEffect(() => {
     axios.get("https://fullstackmemorygame.herokuapp.com/user", 
         {
-          onUploadProgress: progressEvent => {
+          onDownloadProgress: progressEvent => {
             console.log("onUploadProgress")
             setIsFetchingDataBase(true)
           }
