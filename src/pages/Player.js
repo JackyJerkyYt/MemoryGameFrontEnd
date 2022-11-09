@@ -67,6 +67,7 @@ function Player() {
     axios.get("https://fullstackmemorygame.herokuapp.com/user", 
         {
           onUploadProgress: progressEvent => {
+            console.log("onUploadProgress")
             setIsFetchingDataBase(true)
           }
         } 
