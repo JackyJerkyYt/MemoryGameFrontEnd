@@ -69,7 +69,7 @@ function Player() {
         {
           onDownloadProgress: progressEvent => {
             console.log("onUploadProgress")
-            if(finishedfetching){
+            if(!finishedfetching){
               setIsFetchingDataBase(true)
             }
           }
