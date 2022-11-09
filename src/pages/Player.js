@@ -75,6 +75,7 @@ function Player() {
       .then((res) => {
         setUsersArray(res.data)
         setIsFetchingDataBase(false)
+        print("hello")
       })
   })
   const takeAwaysLives = () => {
