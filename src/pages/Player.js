@@ -53,6 +53,7 @@ function Player() {
   const [lostmessage, setLostMessage] = useState(false)
   const [usersArray, setUsersArray] = useState([])
   const [isFetchingDataBase, setIsFetchingDataBase] = useState(true)
+  const [finishedfetching, setFinishedFetching] = useState(false)
 
 
 
@@ -68,13 +69,16 @@ function Player() {
         {
           onDownloadProgress: progressEvent => {
             console.log("onUploadProgress")
-            setIsFetchingDataBase(true)
+            if(finishedfetching){
+              setIsFetchingDataBase(true)
+            }
           }
         } 
       )
       .then((res) => {
         setUsersArray(res.data)
         setIsFetchingDataBase(false)
+        setFinishedFetching(true)
       })
   })
   const takeAwaysLives = () => {
