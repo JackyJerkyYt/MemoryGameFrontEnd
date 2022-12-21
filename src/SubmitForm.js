@@ -21,7 +21,7 @@ export default function SubmitForm({points, setDead, setUserReadTheInstructins, 
     score: `${points}`,
     cityOrCountry: cityOrCountryy
       }  
-      axios.post("https://fullstackmemorygame.herokuapp.com/createUser", user)
+      axios.post("https://fair-pink-termite-robe.cyclic.app/createUser", user)
         .then(() => {
             setDead(false)
             setUserReadTheInstructins(false)

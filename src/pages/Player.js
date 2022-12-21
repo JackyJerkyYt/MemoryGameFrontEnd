@@ -65,7 +65,7 @@ function Player() {
   //take away lives function
 
   useEffect(() => {
-    axios.get("https://fullstackmemorygame.herokuapp.com/user", 
+    axios.get("https://fair-pink-termite-robe.cyclic.app/user", 
         {
           onDownloadProgress: progressEvent => {
             console.log("onUploadProgress")

@@ -60,7 +60,7 @@ function Admin() {
   //take away lives function
 
   useEffect(() => {
-    axios.get("https://fullstackmemorygame.herokuapp.com/user/")
+    axios.get("https://fair-pink-termite-robe.cyclic.app/user/")
       .then((res) => {
         setUsersArray(res.data)
       })
