@@ -348,7 +348,7 @@ function Player() {
           :
           <div>
             
-            <div>Instructions: Tap all the tiles that had turned blue to pass the next level!</div>
+            <div>Instructions: Tap all the tiles that had turned blue to go to the next level!</div>
             <br></br>
             <br></br>
             <div>
